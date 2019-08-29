@@ -6,21 +6,21 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 /TestAutomation
 
-​						/project 
+​	​	​	​	​	​	​	​	/project 
 
-​						/scripts
+​	​	​	​	​	​	​	​   /scripts
 
-​						/testCases
+​	​	​	​	​	​	​	​   /testCases
 
-​						/testCaseExcutables
+​	​	​	​	​	​	​	​   /testCaseExcutables
 
-​                       /tmp
+​	​	​	​	​	​	​	​   /tmp
 
-​					  /oracles
+​	​	​	​	​	​	​	​   /oracles
 
-​                      /docs
+​	​	​	​	​	​	​	​   /docs
 
-​					  /reports
+​	​	​	​	​	​	​	​    /reports
 
 
 
