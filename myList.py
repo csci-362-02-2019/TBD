@@ -1,3 +1,5 @@
+#This program parses the top level directories of its folder and pushes a full list of them to an html page
+
 import webbrowser
 import os
 
