@@ -15,12 +15,43 @@ def create_webpage(arr):
     f = open(page_name, 'w')
 
     # first half of formatted web page
-    t1 = """<html>
-	<head></head>
+    t1 ="""<html>
+    <style>
+        .cofc{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        body{
+            background:#660000;
+        }
+        
+        table, td {
+            border: 2px solid #858585;
+               
+        }
+        th{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #ffffff; 
+        }
+        tr:nth-child(odd){
+            background:#383838;
+            color: #ffffff;          
+        }  
+        tr:nth-child(even){
+            background:#000000;
+            color: #ffffff ;
+            
+        }  
+    </style>
+	<head><img src="cofc.png" class="cofc"></head>
 	<body>
-		<table style="margin:auto;padding:20px;border:1px solid black;text-align:center">
+		<table>
 			<tr>
-				<th style="border-bottom: 1px solid black">Contents of the Top Level Directory</th>
+				<th>Contents of the Top Level Directory</th>
 			</tr>"""
 
     # second half of web page
@@ -36,6 +67,8 @@ def create_webpage(arr):
     # writes to file
     f.write(t1 + table_in + t2)
     f.close()
+
+    # to use chrome on macs
     """
     chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
 
@@ -47,6 +80,7 @@ def create_webpage(arr):
 
     
 def listTopLevelContents():
+
     listOfContents = []
     for path, subdirs, files in os.walk(os.path.dirname(os.path.realpath(__file__))):
         for name in files:
