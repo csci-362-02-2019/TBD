@@ -1,0 +1,21 @@
+{
+    "id":0000001,
+    "test_name":"Test Case Template",
+    "test_discription": "This is the template",
+    "inputs":{
+            "input1":[],
+            "input2":[],
+            "input3":[],
+            "input4":[],
+            "input5":[]
+            },
+    "oracles":{
+            "oracle1":0,
+            "oracle2":1,
+            "oracle3":2,
+            "oracle4":0,
+            "oracle5":-1
+            }
+    "outputs":[],
+    "test_pass":[false,false,false,false,false]
+}
