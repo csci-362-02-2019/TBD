@@ -1,15 +1,14 @@
 {
     "id":0000001,
     "test_name":"div(x, y)",
-    "drive_name":"",
     "test_discription": "Testing  div(x, y) in the functions.py",
     "inputs":{
-            "input1":[5,-1],
+            "input1":[0,1],
 
             },
     "oracles":{
-            "oracle1":-5,
+            "oracle1":0,
             }
     "outputs":[],
-    "test_pass":false
+    "test_pass":[false,false,false,false,false]
 }

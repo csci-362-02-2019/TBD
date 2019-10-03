@@ -4,11 +4,11 @@
     "drive_name":"",
     "test_discription": "Testing  div(x, y) in the functions.py",
     "inputs":{
-            "input1":[5,-1],
+            "input1":[-6,-3],
 
             },
     "oracles":{
-            "oracle1":-5,
+            "oracle1":2,
             }
     "outputs":[],
     "test_pass":false
