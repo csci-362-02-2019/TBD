@@ -1,15 +1,10 @@
 {
-    "id":0000001,
+    "id":"0000001",
     "test_name":"div(x, y)",
     "drive_name":"",
     "test_discription": "Testing  div(x, y) in the functions.py",
-    "inputs":{
-            "input1":[1,99999999999999999999],
-
-            },
-    "oracles":{
-            "oracle1":"overflow error",
-            }
+    "input":[1,1],
+    "oracle":"Can not divide by zero",
     "outputs":[],
     "test_pass":false
 }
