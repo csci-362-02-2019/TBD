@@ -3,8 +3,8 @@
     "test_name":"div(x, y)",
     "drive_name":"",
     "test_discription": "Testing  div(x, y) in the functions.py",
-    "input":[-6,-3],
-    "oracle":2,
+    "input":["-6","-3"],
+    "oracle":"2",
     "outputs":[],
     "test_pass":false
 }

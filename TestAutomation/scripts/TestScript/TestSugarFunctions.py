@@ -32,11 +32,20 @@ def testDriver(testCase):
 def _runDivTest(testCase):
 
     print(testCase["test_discription"])
-    x = testCase["input"][0]
+    x = int(testCase["input"][0])
     y = testCase["input"][1]
+    if "." in y:
+        y = float(y)
+    else:
+        y = int(y)
+    print(type(x))
+    print(type(y))
     oracle = testCase["oracle"]
-    output = str(functions.div(x,y))
-    output = int(output)
+    print(type(oracle))
+    try:
+        output = str(functions.div(x,y))
+    except:
+        output = "Can not divide by zero"
 
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))

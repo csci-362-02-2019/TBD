@@ -3,7 +3,7 @@
     "test_name":"div(x, y)",
     "drive_name":"",
     "test_discription": "Testing  div(x, y) in the functions.py",
-    "input":[1,1],
+    "input":["1","0"],
     "oracle":"Can not divide by zero",
     "outputs":[],
     "test_pass":false

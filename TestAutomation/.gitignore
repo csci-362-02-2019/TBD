@@ -1,0 +1,7 @@
+./DS_Store
+./TestAutomation/scripts/__init__.py
+./TestAutomation/scripts/TestScript/__init__.py
+./TestAutomation/scripts/TestScript/*.pyc
+./TestAutomation/scripts/TestScript/venv
+./TestAutomation/scripts/TestScript/.idea
+
