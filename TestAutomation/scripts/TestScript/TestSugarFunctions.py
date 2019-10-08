@@ -38,10 +38,10 @@ def _runDivTest(testCase):
         y = float(y)
     else:
         y = int(y)
-    print(type(x))
-    print(type(y))
+    #print(type(x))
+    #print(type(y))
     oracle = testCase["oracle"]
-    print(type(oracle))
+    #print(type(oracle))
     try:
         output = str(functions.div(x,y))
     except:
