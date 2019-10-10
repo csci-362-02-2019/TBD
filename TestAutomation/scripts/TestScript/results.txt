@@ -1,1 +1,20 @@
-('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>', <built-in function id>, u'div(x, y)', u'Testing  div(x, y) in the functions.py', ('%s, %s', 5, -1), u'-5', '-5', 'Passed')
+<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
+<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
+<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
+<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
+<tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>
+<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
+<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
+<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
+<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
+<tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>
+<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
+<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
+<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
+<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
+<tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>
+<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
+<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
+<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
+<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
+<tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>

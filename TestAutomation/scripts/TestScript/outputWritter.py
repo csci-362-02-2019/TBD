@@ -13,8 +13,8 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     in a browser
     """
 
-    O = open(outFile, "w")
-    makeRow = ('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>', id, Name, descr, inputs, oracle,output, results)
+    O = open(outFile, "a+")
+    makeRow = ('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n' % (ID, Name, descr, inputs, oracle,output, results))
     O.write(str(makeRow))
     
     O.close()

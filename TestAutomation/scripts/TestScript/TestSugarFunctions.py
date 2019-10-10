@@ -33,7 +33,7 @@ def testDriver(testCase):
 def _runDivTest(testCase):
 
     print(testCase["test_discription"])
-    id = testCase["id"]
+    test_id = testCase["id"]
     test_name = testCase["test_name"]
     description = testCase["test_discription"]
     inputs = testCase["input"]
@@ -55,8 +55,8 @@ def _runDivTest(testCase):
 
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))
-        inputs = ('%s, %s', x , y)
-        outputWritter.outputToFile(id, test_name, description, inputs, oracle, output, 'Passed', 'results.txt')
+        inputs = ('%s, %s'%( x , y))
+        outputWritter.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', 'results.txt')
 
     else:
         inputs = ('%s, %s', x, y)
