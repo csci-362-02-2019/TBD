@@ -1,6 +1,7 @@
 import functions
 import json
 import os
+import  outputWritter
 
 def _getTestCases():
 
@@ -32,6 +33,11 @@ def testDriver(testCase):
 def _runDivTest(testCase):
 
     print(testCase["test_discription"])
+    id = testCase["id"]
+    test_name = testCase["test_name"]
+    description = testCase["test_discription"]
+    inputs = testCase["input"]
+    oracle = testCase["oracle"]
     x = int(testCase["input"][0])
     y = testCase["input"][1]
     if "." in y:
@@ -40,7 +46,7 @@ def _runDivTest(testCase):
         y = int(y)
     #print(type(x))
     #print(type(y))
-    oracle = testCase["oracle"]
+
     #print(type(oracle))
     try:
         output = str(functions.div(x,y))
@@ -49,8 +55,13 @@ def _runDivTest(testCase):
 
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))
+        inputs = ('%s, %s', x , y)
+        outputWritter.outputToFile(id, test_name, description, inputs, oracle, output, 'Passed', 'results.txt')
+
     else:
+        inputs = ('%s, %s', x, y)
         print("Test Failed {} = {},".format(oracle, output))
+        outputWritter.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', 'results.txt')
 
     print("\n \n")
 

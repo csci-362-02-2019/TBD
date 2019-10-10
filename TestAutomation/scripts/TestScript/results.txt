@@ -1,0 +1,1 @@
+('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>', <built-in function id>, u'div(x, y)', u'Testing  div(x, y) in the functions.py', ('%s, %s', 5, -1), u'-5', '-5', 'Passed')

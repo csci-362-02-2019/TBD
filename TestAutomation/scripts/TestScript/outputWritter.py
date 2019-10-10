@@ -14,9 +14,8 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     """
 
     O = open(outFile, "w")
-    O.write("<tr><td>" + id + "</td><td>" + Name  + "</td><td>" + descr + "</td><td>" +
-            inputs + "</td><td>" + oracle + "</td><td>" + output + "</td><td>" + results + "</td><td>" +
-            outFile + "</td></tr>")
+    makeRow = ('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>', id, Name, descr, inputs, oracle,output, results)
+    O.write(str(makeRow))
     
     O.close()
 
