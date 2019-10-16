@@ -1,7 +1,7 @@
 import functions
 import json
 import os
-import  outputWritter
+import outputWriter
 
 def _getTestCases():
 
@@ -56,12 +56,12 @@ def _runDivTest(testCase):
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))
         inputs = ('%s, %s'%( x , y))
-        outputWritter.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', 'results.txt')
+        outputWriter.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', 'results.txt')
 
     else:
         inputs = ('%s, %s', x, y)
         print("Test Failed {} = {},".format(oracle, output))
-        outputWritter.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', 'results.txt')
+        outputWriter.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', 'results.txt')
 
     print("\n \n")
 
