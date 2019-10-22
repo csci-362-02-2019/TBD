@@ -1,0 +1,15 @@
+{
+    "id":0000001,
+    "test_name":"Test Case Template",
+    "drive_name":""
+    "test_discription": "This is the template",
+    "inputs":{
+            "input1":[]
+
+            },
+    "oracles":{
+            "oracle1":0,
+            }
+    "outputs":[],
+    "test_pass":false
+}
