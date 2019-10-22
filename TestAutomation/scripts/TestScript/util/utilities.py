@@ -1,6 +1,8 @@
 import json
 import os
 
+
+
 def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     """
     This function accepts the following parameters:
@@ -25,7 +27,7 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
 #end outputToFile
 
     
-def _getTestCases():
+def getTestCases():
 #This function parses the directory of test cases for all the testcase Jsons
     allTestCasesJson = []
     directory = os.listdir("../../testCases")
@@ -36,7 +38,7 @@ def _getTestCases():
             allTestCasesJson.append(_loadJsonData(testCase))
    
     return allTestCasesJson
-#end _getTestCases()
+#end getTestCases()
 
 def _loadJsonData(testCaseJson):
 #This function accepts the testcase Json file, opens it, and obtains the data from it
