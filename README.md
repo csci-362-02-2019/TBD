@@ -4,23 +4,7 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 ## Framework Directory Structure:
 
-/TestAutomation
-
-​		/project 
-
-​	​	/scripts
-
-​		/testCases
-
-​	​	/testCaseExcutables
-
-​	​	​/tmp
-
-​	​	​/oracles
-
-​	​	​/docs
-		
-		/reports
+![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/directoryStructure.jpg?token=ALEZGXNEIAH7USMKKCVIF6S5XBUQO)
 
 #Framework
 
