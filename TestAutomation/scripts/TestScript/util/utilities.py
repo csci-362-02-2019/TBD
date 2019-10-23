@@ -49,3 +49,42 @@ def _loadJsonData(testCaseJson):
     return (jsonData)
 #end _loadJsonData
 
+
+def createHTML():
+#This function creates the HTML representation using the html template and the gathered output
+
+	result = open("../../temp/results.txt","r")
+	template = open("../../project/resultstemplate.html","r")
+	display = open("../../project/display.html","w")
+	lineCT = 0
+	tableStart = 35 # line number for where table data to be inserted
+	for templateLine in template:
+		
+		if (lineCT < tableStart): #beginning of table
+			display.write(templateLine)
+			pass
+		elif (lineCT == tableStart):
+			for resultLine in result:
+				display.write(resultLine)
+		else:
+			display.write(templateLine)
+		lineCT += 1
+
+	template.close()
+	result.close()
+	display.close()
+#end createHTML
+
+
+
+createHTML()
+
+
+
+
+
+
+
+
+
+
