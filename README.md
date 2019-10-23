@@ -7,7 +7,7 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 ![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/directoryStructure.jpg?token=ALEZGXNEIAH7USMKKCVIF6S5XBUQO)
 
 #Repositories
-Project: Contains files for presentation of data and formatting of data
+Project: Contains files for presentation of data and formatting of data\n
 Scripts: Contains all test scripts and related directories
 TestScript: Contains TestSugarFunctions.py and relates directories
 sugar_methods: Contains all files from sugar necessary for running test cases
