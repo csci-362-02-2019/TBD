@@ -6,7 +6,19 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 ![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/directoryStructure.jpg?token=ALEZGXNEIAH7USMKKCVIF6S5XBUQO)
 
-#Framework
+#Repositories
+Project: Contains files for presentation of data and formatting of data
+Scripts: Contains all test scripts and related directories
+TestScript: Contains TestSugarFunctions.py and relates directories
+sugar_methods: Contains all files from sugar necessary for running test cases
+test_drivers: Contains all drivers specific to individual methods
+util: contains utility functions and files
+testCases: Contains the test case template and each test case JSON
+testCase Executables: Will contain the master executable for the testing framework
+temp: contains temporary files, such as output from the testing framework
+oracles: empty because oracles are specified in the test case JSON
+docs: contains documentation on the framework
+reports: contains all reports relating to the project
 
 #Test Cases
 
