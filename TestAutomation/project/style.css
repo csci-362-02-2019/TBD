@@ -1,0 +1,83 @@
+header{
+	margin: auto;
+	width: 100%;
+	/*border: 1px solid white;*/
+	height: 14vw;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	margin-bottom: 40px;
+	background-color: rgba(0,0,0,1);
+}
+img {
+	position: fixed;
+	left: 4vw;
+	top: 1.25vw;
+	border-radius: 50%;
+	width: 10vw;
+	height: 10vw;
+	border: 3px solid white;
+	float: left;
+}
+h1{
+	margin: auto;
+	height: 10vw;
+	/*border: 1px solid white;*/
+	font-size: 8vw;
+	width: auto;
+}
+span.name {color: rgba(127,223,223,1);/*rgba(100,255,255,0.9);*/}
+
+h2{
+	margin:0;
+	height: auto;
+	font-size: 2vw;
+}
+
+body{
+	background:#111113;
+	width: 100%;
+	margin: auto;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+
+table, td {
+	/*border: 2px solid rgba(0,0,0,.1);*/
+	margin: auto;
+	/*box-shadow: 4px 4px 4px rgba(0,0,0,.3);*/
+}
+th{
+	padding: 5px 20px 20px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: rgba(107,60,154,1);
+	font-style: italic;
+}
+
+tr{
+	padding: 20px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 50px;
+}
+
+tr:nth-child(odd){
+	
+}
+tr:nth-child(even){
+	background: rgba(0,0,0,.2);
+}
+td{
+	padding: 20px;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+	text-align: center;
+	color: rgba(255,255,255,.3);
+	font-weight: bold;
+}
