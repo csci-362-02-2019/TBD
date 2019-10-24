@@ -19,6 +19,9 @@ img {
 	border: 3px solid white;
 	float: left;
 }
+.imgdiv{
+	position: fixed;
+}
 h1{
 	margin: auto;
 	height: 10vw;

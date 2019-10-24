@@ -1,5 +1,6 @@
 import json
 import os
+import webbrowser
 
 
 
@@ -30,10 +31,10 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
 def getTestCases():
 #This function parses the directory of test cases for all the testcase Jsons
     allTestCasesJson = []
-    directory = os.listdir("../../testCases")
+    directory = os.listdir("../testCases")
     for file in directory:
         if (file != "template.json"):
-            testCase = "../../testCases/" + file
+            testCase = "../testCases/" + file
             
             allTestCasesJson.append(_loadJsonData(testCase))
    
@@ -53,9 +54,9 @@ def _loadJsonData(testCaseJson):
 def createHTML():
 #This function creates the HTML representation using the html template and the gathered output
 
-	result = open("../../temp/results.txt","r")
-	template = open("../../project/resultstemplate.html","r")
-	display = open("../../project/display.html","w")
+	result = open("../temp/results.txt","r")
+	template = open("../project/resultstemplate.html","r")
+	display = open("../reports/display.html","w")
 	lineCT = 0
 	tableStart = 35 # line number for where table data to be inserted
 	for templateLine in template:
@@ -73,11 +74,23 @@ def createHTML():
 	template.close()
 	result.close()
 	display.close()
-#end createHTML
+	#end createHTML
 
 
 
-createHTML()
+
+
+
+def open_report():
+
+	createHTML()
+	page_name = '../reports/display.html'
+	chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
+
+	# opens page
+
+	webbrowser.get(chrome_path).open(page_name)
+
 
 
 

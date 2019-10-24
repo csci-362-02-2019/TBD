@@ -27,11 +27,11 @@ def run_div_test(test_case):
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))
         inputs = ('%s, %s'%( x , y))
-        utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', '../../temp/results.txt')
+        utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', '../temp/results.txt')
 
     else:
         inputs = ('%s, %s', x, y)
         print("Test Failed {} = {},".format(oracle, output))
-        utilities.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', '../../temp/results.txt')
+        utilities.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', '../temp/results.txt')
 
     print("\n \n")

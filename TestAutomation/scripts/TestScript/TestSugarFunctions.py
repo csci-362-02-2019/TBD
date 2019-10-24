@@ -10,12 +10,11 @@ def testDriver(testCase):
     if(method == "div(x, y)"):
         div_test.run_div_test(testCase)
 
-def main():
+def runAllTest():
 
     allTestCases = utilities.getTestCases()
     print(allTestCases)
     for testCase in allTestCases:
            testDriver(testCase)
+    utilities.open_report()
 
-if __name__ == '__main__':
-    main()
