@@ -4,7 +4,7 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 ## Framework Directory Structure:
 
-![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/directoryStructure.jpg?token=ALEZGXNEIAH7USMKKCVIF6S5XBUQO)
+![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/DirectoryTree.jpg?token=ALEZGXOYJBBUECUNLSDDJJ25YBRVM)
 
 #Repositories \
 Project: Contains files for presentation of data and formatting of data \
