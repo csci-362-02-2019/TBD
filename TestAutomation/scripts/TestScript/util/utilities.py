@@ -92,10 +92,10 @@ def open_report():
 
 	createHTML()
 	page_name = '../../project/display.html'
-	chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
+	#chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
 
 	# opens page
 
-	webbrowser.get(chrome_path).open(page_name)
+	webbrowser.open_new_tab(page_name)
 
 
