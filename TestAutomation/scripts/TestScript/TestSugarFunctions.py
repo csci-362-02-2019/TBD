@@ -17,4 +17,9 @@ def runAllTest():
     for testCase in allTestCases:
            testDriver(testCase)
     utilities.open_report()
+def main():
+    utilities.html_clean_up()
+    runAllTest()
 
+if __name__ == '__main__':
+    main()
