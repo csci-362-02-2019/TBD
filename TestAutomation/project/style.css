@@ -59,10 +59,10 @@ th{
 }
 
 tr{
-	padding: 20px;
+	padding: 1vw;
 	color: #ffffff;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 	border-radius: 50px;
 }
 
@@ -73,7 +73,7 @@ tr:nth-child(even){
 	background: rgba(0,0,0,.2);
 }
 td{
-	padding: 20px;
+	padding: 1vw;
 }
 
 footer{
