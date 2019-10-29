@@ -1,4 +1,3 @@
-from scripts.TestScript.sugar_methods import functions
 from util import utilities
 from test_drivers import div_test
 

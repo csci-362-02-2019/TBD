@@ -25,10 +25,10 @@
 import math
 import random
 from decimal import Decimal as _Decimal
-from scripts.TestScript.sugar_methods.rational import Rational as _Rational
+from rational import Rational as _Rational
 
 from gettext import gettext as _
-
+import rational
 # List of functions to allow translating the function names.
 _FUNCTIONS = [
     _('add'),

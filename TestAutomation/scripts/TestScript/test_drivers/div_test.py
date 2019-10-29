@@ -1,5 +1,6 @@
-from scripts.TestScript.sugar_methods import functions
-from scripts.TestScript.util import utilities
+from sugar_methods import functions
+from sugar_methods import rational
+from util import utilities
 
 def run_div_test(test_case):
 
