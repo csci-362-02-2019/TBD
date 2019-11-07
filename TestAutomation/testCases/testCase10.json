@@ -1,0 +1,10 @@
+{
+    "id":"00000010",
+    "test_name":"pow(x, y)",
+    "drive_name":"powTest",
+    "test_discription": "Valicates that the function handles strings",
+    "input":["4","two"],
+    "oracle":"could not convert string to float: two",
+    "outputs":[],
+    "test_pass":false
+}

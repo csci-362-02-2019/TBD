@@ -1,0 +1,10 @@
+{
+    "id":"0000006",
+    "test_name":"pow(x, y)",
+    "drive_name":"powTest",
+    "test_discription": "Valicates that the function can operate with a float base ",
+    "input":["2.25","2"],
+    "oracle":"5.0625",
+    "outputs":[],
+    "test_pass":false
+}

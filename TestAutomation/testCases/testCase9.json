@@ -1,0 +1,10 @@
+{
+    "id":"0000009",
+    "test_name":"pow(x, y)",
+    "drive_name":"powTest",
+    "test_discription": "Valicates that the function can operate with a positive exponent",
+    "input":["4","2"],
+    "oracle":"16",
+    "outputs":[],
+    "test_pass":false
+}
