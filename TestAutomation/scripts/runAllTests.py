@@ -1,9 +1,30 @@
-from TestScript import TestSugarFunctions
+from util import utilities
+from test_drivers import div_test, factorial_test, mod_test, powTest
 
-#from TestScript import TestSugarFunctions
 
+def testDriver(testCase):
+
+	method = testCase["test_name"]
+
+	if(method == "div(x, y)"):
+		div_test.run_div_test(testCase)	
+	elif (method == "mod(x,y)"):
+		mod_test.run_mod_test(testCase)
+	elif (method == "pow(x, y)"):
+		powTest.runPowTest(testCase)
+
+
+def runAllTest():
+
+	allTestCases = utilities.getTestCases()
+	print(allTestCases)
+	for testCase in allTestCases:
+		testDriver(testCase)
+	utilities.open_report()
 
 def main():
+	utilities.html_clean_up()
+	runAllTest()
 
-	TestSugarFunctions.main()
-main()
+if __name__ == '__main__':
+	main()
