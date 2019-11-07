@@ -2,38 +2,39 @@ from sugar_methods import functions
 from sugar_methods import rational
 from util import utilities
 
-def run_factorial_test(test_case):
+def run_mod_test(test_case):
 
     print(test_case["test_discription"])
     test_id = test_case["id"]
     test_name = test_case["test_name"]
     description = test_case["test_discription"]
     oracle = test_case["oracle"]
-    n = test_case["input"][0]
+    inputs = test_case["input"]
+    x = test_case["input"][0]
+    y = test_case["input"][1]
 
-    # type casting
-    if "." in n:
-        n = float(n)
+    if "." in y:
+        y = float(y)
     else:
-        n = int(n)
+        y = int(y)
+    if "." in x:
+        x = float(x)
+    elif "<string>" not in x:
+        x = int(y)
 
-    # test
     try:
-        output = str(functions.factorial(n))
+        output = str(functions.mod(x, y))
     except:
-        if(n < 0):
-            output = "Factorial(x) is only defined for integers x>=0"
-        if type(n) not in (int, int):
-            output = "Factorial only defined for integers"
+        output = "Can only calculate x modulo <integer>"
 
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))
-        inputs = ('%s' % n)
+        inputs = ('%s, %s'%( x , y))
         utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', '../../temp/results.txt')
 
     else:
-        inputs = ('%s', n)
-        print("Test Failed {} = {},".format(oracle, output))
-        utilities.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', '../../temp/results.txt')
+        inputs = ('%s, %s' % (x, y))
+        print("Test Failed {} = {}".format(oracle, output))
+        utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Failed', '../../temp/results.txt')
 
     print("\n \n")

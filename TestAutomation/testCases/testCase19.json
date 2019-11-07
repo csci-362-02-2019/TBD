@@ -1,10 +1,10 @@
 {
-    "id":"0000018",
+    "id":"0000019",
     "test_name":"factorial(n)",
     "drive_name":"factorial_test",
     "test_discription": "Testing  factorial(n) in functions.py",
-    "input":["-10"],
-    "oracle":"Factorial(x) is only defined for integers x>=0",
+    "input":["7.01"],
+    "oracle":"Factorial only defined for integers",
     "outputs":[],
     "test_pass":false
 }
