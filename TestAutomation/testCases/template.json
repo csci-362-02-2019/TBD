@@ -1,15 +1,10 @@
 {
-    "id":0000001,
-    "test_name":"Test Case Template",
-    "drive_name":""
-    "test_discription": "This is the template",
-    "inputs":{
-            "input1":[]
-
-            },
-    "oracles":{
-            "oracle1":0,
-            }
+    "id":"0000000",
+    "test_name":"template",
+    "drive_name":"",
+    "test_discription": "this is the template",
+    "input":["2","2.0"],
+    "oracle":"4.0",
     "outputs":[],
     "test_pass":false
 }

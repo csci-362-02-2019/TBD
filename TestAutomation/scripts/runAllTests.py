@@ -1,7 +1,9 @@
-import os
+from TestScript import TestSugarFunctions
+
+#from TestScript import TestSugarFunctions
 
 
 def main():
-	os.system("cd TestScript && python TestSugarFunctions.py")
 
+	TestSugarFunctions.main()
 main()
