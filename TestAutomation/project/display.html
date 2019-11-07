@@ -33,11 +33,21 @@
 		<b><td>Test Case ID</td><td><b>Name</td><td>Description</td><td>Inputs</td><td>Oracle</td><td>Output</td><td>Result</td></tr></b>
 	<!-- Insert OutputWriter Text Here -->
 
-<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
-<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
-<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
-<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
 <tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>
+<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
+<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
+<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
+<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
+<tr><td>0000016</td><td>factorial(n)</td><td>Testing  factorial(n) in functions.py</td><td>5</td><td>120</td><td>120</td><td>Passed</td></tr>
+<tr><td>0000017</td><td>factorial(n)</td><td>Testing  factorial(n) in functions.py</td><td>0</td><td>1</td><td>1</td><td>Passed</td></tr>
+<tr><td>0000018</td><td>factorial(n)</td><td>Testing  factorial(n) in functions.py</td><td>-10</td><td>Factorial(x) is only defined for integers x>=0</td><td>Factorial(x) is only defined for integers x>=0</td><td>Passed</td></tr>
+<tr><td>0000019</td><td>factorial(n)</td><td>Testing  factorial(n) in functions.py</td><td>7.01</td><td>Factorial only defined for integers</td><td>Factorial only defined for integers</td><td>Passed</td></tr>
+<tr><td>0000020</td><td>factorial(n)</td><td>Testing  factorial(n) in functions.py</td><td>2147483648</td><td>OverflowError: factorial() argument should not exceed 2147483647</td><td>Factorial only defined for integers</td><td>Failed</td></tr>
+<tr><td>0000021</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>3, 3</td><td>1</td><td>0</td><td>Failed</td></tr>
+<tr><td>0000022</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>10, 10</td><td>3</td><td>0</td><td>Failed</td></tr>
+<tr><td>0000023</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>-20.5, 5</td><td>4.5</td><td>4.5</td><td>Passed</td></tr>
+<tr><td>0000024</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>0, 0.01</td><td>Can only calculate x modulo <integer></td><td>Can only calculate x modulo <integer></td><td>Passed</td></tr>
+<tr><td>0000025</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td><string>, 2</td><td>TypeError: not all arguments converted during string formatting</td><td>Can only calculate x modulo <integer></td><td>Failed</td></tr>
 	<!-- End OutputWriter Text Here -->
 </table>
 

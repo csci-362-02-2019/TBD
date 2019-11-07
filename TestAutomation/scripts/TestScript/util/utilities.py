@@ -2,6 +2,7 @@
 import json
 import os
 import webbrowser
+import re
 
 def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     """
@@ -32,7 +33,8 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
 def getTestCases():
     # This function parses the directory of test cases for all the testcase Jsons
     allTestCasesJson = []
-    directory = os.listdir("../../testCases")
+    directory = natural_sort(os.listdir("../../testCases"))
+    print(directory)
     for file in directory:
         if (file != "template.json"):
             testCase = "../../testCases/" + file
@@ -97,5 +99,11 @@ def open_report():
 	# opens page
 
 	webbrowser.open_new_tab(page_name)
+
+
+def natural_sort(l):
+    convert = lambda text: int(text) if text.isdigit() else text.lower()
+    alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
+    return sorted(l, key=alphanum_key)
 
 

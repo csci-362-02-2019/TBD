@@ -1,0 +1,10 @@
+{
+    "id":"0000017",
+    "test_name":"factorial(n)",
+    "drive_name":"factorial_test",
+    "test_discription": "Testing  factorial(n) in functions.py",
+    "input":["0"],
+    "oracle":"1",
+    "outputs":[],
+    "test_pass":false
+}
