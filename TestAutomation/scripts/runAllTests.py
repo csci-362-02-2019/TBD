@@ -12,6 +12,8 @@ def testDriver(testCase):
 		mod_test.run_mod_test(testCase)
 	elif (method == "pow(x, y)"):
 		powTest.runPowTest(testCase)
+	elif (method == "factorial(n)"):
+		factorial_test.run_factorial_test(testCase)
 
 
 def runAllTest():
