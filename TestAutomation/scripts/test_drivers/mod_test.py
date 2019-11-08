@@ -20,7 +20,7 @@ def run_mod_test(test_case):
     if "." in x:
         x = float(x)
     elif "string" not in x:
-        x = int(y)
+        x = int(x)
 
     try:
         output = str(functions.mod(x, y))
