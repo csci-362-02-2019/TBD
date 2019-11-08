@@ -24,13 +24,14 @@
 
 </header>
 <body ondragstart="return false">
+
+<div id="title"> Test Results <p>Test Conducted on <span id="datetime"></span></p></div>
+
 <!-- Table -->
 <table>
 	<tr>
-		<th colspan ="7">Test Results</th>
+		<th>Test Case ID</th><th>Name</th><th>Inputs</th><th>Oracle</th><th>Output</th><th>Result</th>
 	</tr>
-	<tr>
-		<b><td>Test Case ID</td><td><b>Name</td><td>Description</td><td>Inputs</td><td>Oracle</td><td>Output</td><td>Result</td></tr></b>
 	<!-- Insert OutputWriter Text Here -->
 
 
@@ -43,5 +44,12 @@
 </footer>
 
 </body>
+
+<script>
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (("0"+dt.getDate()).slice(-2)) +"."+
+		(dt.getFullYear()) +" at "+ (("0"+(dt.getHours())).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+ (("0"+dt.getSeconds()).slice(-2));
+
+</script>
 
 </html>

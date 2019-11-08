@@ -19,13 +19,13 @@ def run_mod_test(test_case):
         y = int(y)
     if "." in x:
         x = float(x)
-    elif "<string>" not in x:
+    elif "string" not in x:
         x = int(y)
 
     try:
         output = str(functions.mod(x, y))
     except:
-        output = "Can only calculate x modulo <integer>"
+        output = "Can only calculate x modulo &lt;integer&gt;"
 
     if(output == oracle):
         print("Test Passed {} = {}".format(oracle, output))

@@ -19,9 +19,15 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     in a browser
     """
 
+    color = " style=\"color:#ffffff\" "
+    if(results == "Passed"):
+        color = " style=\"color:#00ff00\" "
+    elif (results == "Failed"):
+        color = " style=\"color:#ff0000\" "
+
     O = open(outFile, "a+")
-    makeRow = ('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n' % (
-    ID, Name, descr, inputs, oracle, output, results))
+    makeRow = ('        <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td%s>%s</td></tr>\n' % (
+    ID, "functions." + Name, inputs, oracle, output, color, results))
     O.write(str(makeRow))
 
     O.close()

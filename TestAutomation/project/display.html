@@ -24,30 +24,36 @@
 
 </header>
 <body ondragstart="return false">
+
+<div id="title"> Test Results <p>Test Conducted on <span id="datetime"></span></p></div>
+
 <!-- Table -->
 <table>
 	<tr>
-		<th colspan ="7">Test Results</th>
+		<th>Test Case ID</th><th>Name</th><th>Inputs</th><th>Oracle</th><th>Output</th><th>Result</th>
 	</tr>
-	<tr>
-		<b><td>Test Case ID</td><td><b>Name</td><td>Description</td><td>Inputs</td><td>Oracle</td><td>Output</td><td>Result</td></tr></b>
 	<!-- Insert OutputWriter Text Here -->
+        <tr><td>0000001</td><td>functions.div(x, y)</td><td>5, -1</td><td>-5</td><td>-5</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000002</td><td>functions.div(x, y)</td><td>-6, -3</td><td>2</td><td>2</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000003</td><td>functions.div(x, y)</td><td>0, 1</td><td>0</td><td>0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000004</td><td>functions.div(x, y)</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000005</td><td>functions.div(x, y)</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000006</td><td>functions.pow(x, y)</td><td>2.25, 2</td><td>5.0625</td><td>5.0625</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000007</td><td>functions.pow(x, y)</td><td>4, .5</td><td>2</td><td>2</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000008</td><td>functions.pow(x, y)</td><td>2, -2</td><td>0.25</td><td>0.25</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000009</td><td>functions.pow(x, y)</td><td>4, 2</td><td>16</td><td>16</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>00000010</td><td>functions.pow(x, y)</td><td>4, two</td><td>could not convert string to float: two</td><td>could not convert string to float: two</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000016</td><td>functions.factorial(n)</td><td>5</td><td>120</td><td>120</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000017</td><td>functions.factorial(n)</td><td>0</td><td>1</td><td>1</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000018</td><td>functions.factorial(n)</td><td>-10</td><td>Factorial(x) is only defined for integers x>=0</td><td>Factorial(x) is only defined for integers x>=0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000019</td><td>functions.factorial(n)</td><td>7.01</td><td>Factorial only defined for integers</td><td>Factorial only defined for integers</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000020</td><td>functions.factorial(n)</td><td>100</td><td>93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td>93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000021</td><td>functions.mod(x,y)</td><td>3, 3</td><td>1</td><td>0</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000022</td><td>functions.mod(x,y)</td><td>10, 10</td><td>3</td><td>0</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000023</td><td>functions.mod(x,y)</td><td>-20.5, 5</td><td>4.5</td><td>4.5</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000024</td><td>functions.mod(x,y)</td><td>0, 0.01</td><td>Can only calculate x modulo &lt;integer&gt;</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000025</td><td>functions.mod(x,y)</td><td>string, 2</td><td>TypeError: not all arguments converted during string formatting</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
 
-<tr><td>0000001</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>5, -1</td><td>-5</td><td>-5</td><td>Passed</td></tr>
-<tr><td>0000002</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>-6, -3</td><td>2</td><td>2</td><td>Passed</td></tr>
-<tr><td>0000003</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>0, 1</td><td>0</td><td>0</td><td>Passed</td></tr>
-<tr><td>0000004</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>1, 0</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td>Passed</td></tr>
-<tr><td>0000005</td><td>div(x, y)</td><td>Testing  div(x, y) in the functions.py</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td>Passed</td></tr>
-<tr><td>0000006</td><td>pow(x, y)</td><td>Valicates that the function can operate with a float base </td><td>2.25, 2</td><td>5.0625</td><td>5.0625</td><td>Passed</td></tr>
-<tr><td>0000007</td><td>pow(x, y)</td><td>Valicates that the function can operate with 0 < y < 1</td><td>4, .5</td><td>2</td><td>2</td><td>Passed</td></tr>
-<tr><td>0000008</td><td>pow(x, y)</td><td>Valicates that the function can operate with negative exponent</td><td>2, -2</td><td>0.25</td><td>0.25</td><td>Passed</td></tr>
-<tr><td>0000009</td><td>pow(x, y)</td><td>Valicates that the function can operate with a positive exponent</td><td>4, 2</td><td>16</td><td>16</td><td>Passed</td></tr>
-<tr><td>00000010</td><td>pow(x, y)</td><td>Valicates that the function handles strings</td><td>4, two</td><td>could not convert string to float: two</td><td>could not convert string to float: two</td><td>Passed</td></tr>
-<tr><td>0000021</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>3, 3</td><td>1</td><td>0</td><td>Failed</td></tr>
-<tr><td>0000022</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>10, 10</td><td>3</td><td>0</td><td>Failed</td></tr>
-<tr><td>0000023</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>-20.5, 5</td><td>4.5</td><td>4.5</td><td>Passed</td></tr>
-<tr><td>0000024</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td>0, 0.01</td><td>Can only calculate x modulo <integer></td><td>Can only calculate x modulo <integer></td><td>Passed</td></tr>
-<tr><td>0000025</td><td>mod(x,y)</td><td>Testing  mod(x,y) in functions.py</td><td><string>, 2</td><td>TypeError: not all arguments converted during string formatting</td><td>Can only calculate x modulo <integer></td><td>Failed</td></tr>
 	<!-- End OutputWriter Text Here -->
 </table>
 
@@ -57,5 +63,12 @@
 </footer>
 
 </body>
+
+<script>
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (("0"+dt.getDate()).slice(-2)) +"."+
+		(dt.getFullYear()) +" at "+ (("0"+(dt.getHours())).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+ (("0"+dt.getSeconds()).slice(-2));
+
+</script>
 
 </html>

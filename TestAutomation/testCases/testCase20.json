@@ -3,8 +3,8 @@
     "test_name":"factorial(n)",
     "drive_name":"factorial_test",
     "test_discription": "Testing  factorial(n) in functions.py",
-    "input":["-2147483648"],
-    "oracle":"(not working) OverflowError: factorial() argument should not exceed 2147483647",
+    "input":["100"],
+    "oracle":"93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000",
     "outputs":[],
     "test_pass":false
 }

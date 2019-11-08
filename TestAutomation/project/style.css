@@ -47,15 +47,27 @@ body{
 table, td {
 	/*border: 2px solid rgba(0,0,0,.1);*/
 	margin: auto;
+	margin-bottom: 20px;
+	width: 90%;
+	table-layout: fixed;
+	overflow:hidden;
 	/*box-shadow: 4px 4px 4px rgba(0,0,0,.3);*/
 }
-th{
-	padding: 5px 20px 20px 20px;
+#title{
+	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 40px;
 	color: rgba(107,60,154,1);
 	font-style: italic;
+	font-weight: bold;
+}
+#title p {
+	padding: 0px;
+	text-transform: lowercase;
+	font-size: 20px;
+	color: rgba(107,60,154,.5);
+	font-style: normal;
 }
 
 tr{
@@ -79,8 +91,9 @@ td{
 footer{
 	width: 100%;
 	position: fixed;
-	bottom: 10px;
+	bottom: 0;
 	text-align: center;
 	color: rgba(255,255,255,.3);
 	font-weight: bold;
+	background-color: #000000;
 }
