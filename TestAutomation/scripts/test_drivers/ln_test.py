@@ -1,6 +1,7 @@
 from sugar_methods import functions
 from sugar_methods import rational
 from util import utilities
+import re
 
 def run_ln_test(test_case):
 
@@ -14,6 +15,8 @@ def run_ln_test(test_case):
 
     if "." in x_string:
         x = float(x_string)
+    elif(re.search('[a-zA-Z]',x_string)):
+        x = x_string
     else:
         x = int(x_string)
 
