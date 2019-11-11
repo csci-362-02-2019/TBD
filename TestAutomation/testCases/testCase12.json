@@ -1,0 +1,10 @@
+{
+    "id":"0000012",
+    "test_name":"ln(x)",
+    "drive_name":"ln_test",
+    "test_discription": "Testing ln(x) method in functions.py, which calculates the natural logarithm of x",
+    "input":["1"],
+    "oracle":"0.0",
+    "outputs":[],
+    "test_pass":false
+}
