@@ -245,9 +245,10 @@ Given by (exp(x) + exp(-x)) / 2')
 
 
 def div(x, y):
+    """
     if y == 0 or y == 0.0:
         raise ValueError(_('Can not divide by zero'))
-
+    """
     if is_int(x) and float(abs(x)) < 1e12 and \
             is_int(y) and float(abs(y)) < 1e12:
         return _Rational(x, y)
@@ -465,17 +466,25 @@ else returns False')
 
 
 def pow(x, y):
+
+
+
     if is_int(y):
+	
         if is_int(x):
             return int(x) ** int(y)
+	
         elif hasattr(x, '__pow__'):
             return x ** y
         else:
             return float(x) ** int(y)
+
     else:
+	
         if isinstance(x, _Decimal) or isinstance(y, _Decimal):
             x = _d(x)
             y = _d(y)
+	
         return _d(math.pow(float(x), float(y)))
 
 
