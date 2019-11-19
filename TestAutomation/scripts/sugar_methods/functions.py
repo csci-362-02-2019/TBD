@@ -409,14 +409,12 @@ is_prime.__doc__ = ('is_prime(x), Check if a number is a prime. \
 
 
 def ln(x):
-    #Added greater then or equal to sign to the conditional statement
-    """
+
     if float(x) >= 0:
         return math.log(float(x))
     else:
         raise ValueError(_('Logarithm(x) only defined for x > 0'))
 
-    """
     return math.log(float(x))
 ln.__doc__ = _(
     'ln(x), return the natural logarithm of x. This is the value for \
