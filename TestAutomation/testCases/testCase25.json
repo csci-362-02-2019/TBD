@@ -2,9 +2,9 @@
     "id":"0000025",
     "test_name":"mod(x,y)",
     "drive_name":"mod_test",
-    "test_discription": "Testing  mod(x,y) in functions.py",
+    "test_discription": "Tests a modulo operation where x is a string",
     "input":["string","2"],
-    "oracle":"Can only calculate x modulo &lt;integer&gt;",
+    "oracle":"TypeError: not all arguments converted during string formatting",
     "outputs":[],
     "test_pass":false
 }

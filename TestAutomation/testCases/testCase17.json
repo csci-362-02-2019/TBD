@@ -2,7 +2,7 @@
     "id":"0000017",
     "test_name":"factorial(n)",
     "drive_name":"factorial_test",
-    "test_discription": "Testing  factorial(n) in functions.py",
+    "test_discription": "Tests factorial of zero",
     "input":["0"],
     "oracle":"1",
     "outputs":[],

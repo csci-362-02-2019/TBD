@@ -2,7 +2,7 @@
     "id":"0000003",
     "test_name":"div(x, y)",
     "drive_name":"",
-    "test_discription": "Testing  div(x, y) in the functions.py",
+    "test_discription": "Divide zero by a number",
     "input":["0","1"],
     "oracle":"0",
     "outputs":[],

@@ -26,8 +26,8 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
         color = " style=\"color:#ff0000\" "
 
     O = open(outFile, "a+")
-    makeRow = ('        <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td%s>%s</td></tr>\n' % (
-    ID, "functions." + Name, inputs, oracle, output, color, results))
+    makeRow = ('        <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td%s>%s</td></tr>\n' % (
+    ID, "functions." + Name, descr, inputs, oracle, output, color, results))
     O.write(str(makeRow))
 
     O.close()

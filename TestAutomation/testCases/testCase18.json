@@ -2,7 +2,7 @@
     "id":"0000018",
     "test_name":"factorial(n)",
     "drive_name":"factorial_test",
-    "test_discription": "Testing  factorial(n) in functions.py",
+    "test_discription": "Tests factorial of a negative number",
     "input":["-10"],
     "oracle":"Factorial(x) is only defined for integers x>=0",
     "outputs":[],
