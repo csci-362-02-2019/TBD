@@ -249,6 +249,9 @@ def div(x, y):
     if y == 0 or y == 0.0:
         raise ValueError(_('Can not divide by zero'))
     """
+    if (is_int(x) and is_int(y)):
+        return _Rational(x, y)
+
     if is_int(x) and float(abs(x)) < 1e12 and \
             is_int(y) and float(abs(y)) < 1e12:
         return _Rational(x, y)
@@ -288,13 +291,15 @@ exp.__doc__ = _('exp(x), return the natural exponent of x. Given by e^x')
 
 
 def factorial(n):
+    """
     if n < 0:
         raise ValueError(_('Factorial(x) is only defined for integers x>=0'))
+    """
 
     if type(n) not in (int, int):
         raise ValueError(_('Factorial only defined for integers'))
-
-    if n == 0:
+    # change to not equal
+    if n != 0:
         return 1
 
     n = int(n)
@@ -404,12 +409,15 @@ is_prime.__doc__ = ('is_prime(x), Check if a number is a prime. \
 
 
 def ln(x):
-    if float(x) > 0:
+    #Added greater then or equal to sign to the conditional statement
+    """
+    if float(x) >= 0:
         return math.log(float(x))
     else:
         raise ValueError(_('Logarithm(x) only defined for x > 0'))
 
-
+    """
+    return math.log(float(x))
 ln.__doc__ = _(
     'ln(x), return the natural logarithm of x. This is the value for \
 which the exponent exp() equals x. Defined for x >= 0.')
@@ -428,7 +436,8 @@ This is the value y for which 10^y equals x. Defined for x >= 0.')
 
 
 def mod(x, y):
-    if is_int(y):
+    #changed to if not from if
+    if not is_int(y):
         return x % y
     else:
         raise ValueError(_('Can only calculate x modulo <integer>'))
@@ -477,6 +486,7 @@ def pow(x, y):
         elif hasattr(x, '__pow__'):
             return x ** y
         else:
+            #Change to x from float(x)
             return float(x) ** int(y)
 
     else:
@@ -484,8 +494,8 @@ def pow(x, y):
         if isinstance(x, _Decimal) or isinstance(y, _Decimal):
             x = _d(x)
             y = _d(y)
-	
-        return _d(math.pow(float(x), float(y)))
+	    #return _d(math.pow(float(x), float(y)))
+        return _d(math.pow(int(x), int(y)))
 
 
 pow.__doc__ = _('pow(x, y), return x to the power y (x**y)')
