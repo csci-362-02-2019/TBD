@@ -3,22 +3,16 @@ from sugar_methods import rational
 from util import utilities
 import re
 
-def run_ln_test(test_case):
+def run_ln_test(x, oracle):
 
-    print(test_case["test_discription"])
-    test_id = test_case["id"]
-    test_name = test_case["test_name"]
-    description = test_case["test_discription"]
-    inputs = test_case["input"]
-    oracle = test_case["oracle"]
-    x_string = test_case["input"][0]
 
-    if "." in x_string:
-        x = float(x_string)
-    elif(re.search('[a-zA-Z]',x_string)):
-        x = x_string
+
+    if "." in x:
+        x = float(x)
+    elif(re.search('[a-zA-Z]',x)):
+        x = x
     else:
-        x = int(x_string)
+        x = int()
 
     #print(type(oracle))
 
@@ -29,13 +23,9 @@ def run_ln_test(test_case):
 
     if(output == oracle):
 
-        print("Test Passed {} = {}".format(oracle, output))
-        inputs = ('%s'%(x_string))
-        utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', '../temp/results.txt')
+        return "Passed", output
 
     else:
-        inputs = ('%s', str(x))
-        print("Test Failed {} = {},".format(oracle, output))
-        utilities.outputToFile(id, test_name, description, inputs, oracle, output, 'Failed', '../temp/results.txt')
+        return "Failed", output
 
     print("\n \n")

@@ -22,16 +22,20 @@ def testDriver(testCase):
 	method = testCase["test_name"]
 
 	if(method == "div(x, y)"):
-		div_test.run_div_test(testCase)
+		testSuccess, output= div_test.run_div_test(x, y, oracle)
+		utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, testSuccess, '../temp/results.txt')
 	elif (method == "mod(x,y)"):
-		mod_test.run_mod_test(testCase)
+		testSuccess, output= mod_test.run_mod_test(x, y, oracle)
+		utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, testSuccess, '../temp/results.txt')
 	elif (method == "pow(x, y)"):
 		testSuccess, output= powTest.runPowTest(x,y, oracle)
 		utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, testSuccess, '../temp/results.txt')
 	elif (method == "factorial(n)"):
-		factorial_test.run_factorial_test(testCase)
+		testSuccess, output= factorial_test.run_factorial_test(x, oracle)
+		utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, testSuccess, '../temp/results.txt')
 	elif (method == "ln(x)"):
-		ln_test.run_ln_test(testCase)
+		testSuccess, output= ln_test.run_ln_test(x, oracle)
+		utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, testSuccess, '../temp/results.txt')
 	else:
 		print("ERROR: Test Case not defined in testing framework")
 

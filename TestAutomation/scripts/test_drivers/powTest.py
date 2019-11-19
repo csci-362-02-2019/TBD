@@ -23,14 +23,10 @@ def runPowTest(x, y, oracle):
 	
 	if (output == oracle):
 		return "Passed", output
-		#print("Test Passed {} = {}".format(oracle, output))
-		#inputs = ('%s, %s'%( x , y))
-		#utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Passed', '../temp/results.txt')
+
 	else:
 		return "Failed", output
-		#inputs = ('%s, %s'%( x, y))
-		#print("Test Failed {} = {},".format(oracle, output))
-		#utilities.outputToFile(str(test_id), test_name, description, inputs, oracle, output, 'Failed', '../temp/results.txt')
+
 
 	print("\n \n")
 	
