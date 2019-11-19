@@ -9,6 +9,7 @@ from util import utilities
 from test_drivers import div_test, factorial_test,ln_test,mod_test,powTest
 import os
 import json
+import re
 
 def testDriver(testCase):
 	test_id = testCase["id"]
@@ -16,11 +17,27 @@ def testDriver(testCase):
 	description = testCase["test_discription"]
 	inputs = testCase["input"]
 	oracle = testCase["oracle"]
-	x = testCase["input"][0]
+	x = str(testCase["input"][0])
 	if(len(testCase["input"]) == 2):
-		y = testCase["input"][1]
-
+		y = str(testCase["input"][1])
+		if "." in y:
+			y = float(y)
+		elif(re.search('[a-zA-Z]',y)):
+			y = y
+		else:
+			y = int(y)
 	method = testCase["test_name"]
+
+	if "." in x:
+		x = float(x)
+	elif(re.search('[a-zA-Z]',x)):
+		x = x
+	else:
+		x = int(x)
+
+
+
+
 
 	if(method == "div(x, y)"):
 		testSuccess, output= div_test.run_div_test(x, y, oracle)

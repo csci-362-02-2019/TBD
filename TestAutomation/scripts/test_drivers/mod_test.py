@@ -6,14 +6,7 @@ def run_mod_test(x, y, oracle):
 
 
 
-    if "." in y:
-        y = float(y)
-    else:
-        y = int(y)
-    if "." in x:
-        x = float(x)
-    elif "string" not in x:
-        x = int(x)
+
 
     try:
         output = str(functions.mod(x, y))

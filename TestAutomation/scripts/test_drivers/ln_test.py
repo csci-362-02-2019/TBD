@@ -6,15 +6,12 @@ import re
 def run_ln_test(x, oracle):
 
 
-
-    if "." in x:
-        x = float(x)
-    elif(re.search('[a-zA-Z]',x)):
-        x = x
-    else:
-        x = int()
-
-    #print(type(oracle))
+    #if "." in x:
+     #   x = float(x)
+    #elif(re.search('[a-zA-Z]',x)):
+    #    x = x
+    #else:
+       # x = int()
 
     try:
         output = str(functions.ln(x))

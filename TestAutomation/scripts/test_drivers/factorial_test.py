@@ -4,12 +4,6 @@ from util import utilities
 
 def run_factorial_test(n, oracle):
 
-    # type casting
-    if "." in n:
-        n = float(n)
-    else:
-        n = int(n)
-
     # test
     try:
         output = str(functions.factorial(n))

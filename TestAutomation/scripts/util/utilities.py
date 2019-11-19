@@ -18,7 +18,7 @@ def outputToFile(ID, Name, descr, inputs, oracle, output, results, outFile):
     From here the function will wrap the output in HTML tags for later display
     in a browser
     """
-
+    inputs = [str(r) for r in inputs]
     color = " style=\"color:#ffffff\" "
     if(results == "Passed"):
         color = " style=\"color:#00ff00\" "

@@ -1,14 +1,12 @@
 from sugar_methods import functions
 from sugar_methods import rational
 from util import utilities
+import re
 
 def run_div_test(x, y, oracle):
 
  
-	if "." in y:
-		y = float(y)
-	else:
-		y = int(y)
+
 	#print(type(x))
 	#print(type(y))
 
