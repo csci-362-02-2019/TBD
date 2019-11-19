@@ -7,7 +7,8 @@ We are team TBD and we have created a testing framework to test various methods 
 
 from util import utilities
 from test_drivers import div_test, factorial_test,ln_test,mod_test,powTest
-
+import os
+import json
 
 def testDriver(testCase):
 	test_id = testCase["id"]
@@ -42,11 +43,20 @@ def testDriver(testCase):
 
 def runAllTest():
 
-	allTestCases = utilities.getTestCases()
-	print(allTestCases)
-	for testCase in allTestCases:
-		testDriver(testCase)
+
+
+	directory = utilities.natural_sort(os.listdir("../testCases"))
+	print(directory)
+	for file in directory:
+		if (file != "template.json"):
+			testCase = "../testCases/" + file
+			with open(testCase) as jsonFile:
+				jsonData = json.load(jsonFile)
+			jsonFile.close()
+			testDriver(jsonData)
+
 	utilities.open_report()
+
 
 def main():
 	utilities.html_clean_up()

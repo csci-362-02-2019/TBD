@@ -33,31 +33,31 @@
 		<th>Test Case ID</th><th>Name</th><th>Inputs</th><th>Oracle</th><th>Output</th><th>Result</th>
 	</tr>
 	<!-- Insert OutputWriter Text Here -->
-        <tr><td>0000001</td><td>functions.div(x, y)</td><td>5, -1</td><td>-5</td><td>-5</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000002</td><td>functions.div(x, y)</td><td>-6, -3</td><td>2</td><td>2</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000003</td><td>functions.div(x, y)</td><td>0, 1</td><td>0</td><td>0</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td><built-in function id></td><td>functions.div(x, y)</td><td>('%s, %s', 1, 0)</td><td>Can not divide by zero</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000005</td><td>functions.div(x, y)</td><td>2, 0.5</td><td>4.0</td><td>4.0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000001</td><td>functions.div(x, y)</td><td>[u'5', u'-1']</td><td>-5</td><td>Can not divide by zero</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000002</td><td>functions.div(x, y)</td><td>[u'-6', u'-3']</td><td>2</td><td>Can not divide by zero</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000003</td><td>functions.div(x, y)</td><td>[u'0', u'1']</td><td>0</td><td>Can not divide by zero</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000004</td><td>functions.div(x, y)</td><td>[u'1', u'0']</td><td>Can not divide by zero</td><td>Can not divide by zero</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000005</td><td>functions.div(x, y)</td><td>[u'2', u'.5']</td><td>4.0</td><td>Can not divide by zero</td><td style="color:#ff0000" >Failed</td></tr>
         <tr><td>0000006</td><td>functions.pow(x, y)</td><td>[u'2.25', u'2']</td><td>5.0625</td><td>invalid literal for int() with base 10: '2.25'</td><td style="color:#ff0000" >Failed</td></tr>
         <tr><td>0000007</td><td>functions.pow(x, y)</td><td>[u'4', u'.5']</td><td>2</td><td>invalid literal for int() with base 10: '.5'</td><td style="color:#ff0000" >Failed</td></tr>
         <tr><td>0000008</td><td>functions.pow(x, y)</td><td>[u'2', u'-2']</td><td>0.25</td><td>0.25</td><td style="color:#00ff00" >Passed</td></tr>
         <tr><td>0000009</td><td>functions.pow(x, y)</td><td>[u'4', u'2']</td><td>16</td><td>16</td><td style="color:#00ff00" >Passed</td></tr>
         <tr><td>00000010</td><td>functions.pow(x, y)</td><td>[u'4', u'two']</td><td>could not convert string to float: two</td><td>invalid literal for int() with base 10: 'two'</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000011</td><td>functions.ln(x)</td><td>-1</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000012</td><td>functions.ln(x)</td><td>1</td><td>0.0</td><td>0.0</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000013</td><td>functions.ln(x)</td><td>0</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000014</td><td>functions.ln(x)</td><td>string</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000015</td><td>functions.ln(x)</td><td>.01</td><td>-4.60517018599</td><td>-4.60517018599</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000016</td><td>functions.factorial(n)</td><td>5</td><td>120</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000017</td><td>functions.factorial(n)</td><td>0</td><td>1</td><td>0</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000018</td><td>functions.factorial(n)</td><td>-10</td><td>Factorial(x) is only defined for integers x>=0</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000019</td><td>functions.factorial(n)</td><td>7.01</td><td>Factorial only defined for integers</td><td>Factorial only defined for integers</td><td style="color:#00ff00" >Passed</td></tr>
-        <tr><td>0000020</td><td>functions.factorial(n)</td><td>100</td><td>93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000021</td><td>functions.mod(x,y)</td><td>10, 3</td><td>1</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000022</td><td>functions.mod(x,y)</td><td>3, 10</td><td>3</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000023</td><td>functions.mod(x,y)</td><td>-20.5, 5</td><td>4.5</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000024</td><td>functions.mod(x,y)</td><td>1, 0.01</td><td>Can only calculate x modulo &lt;integer&gt;</td><td>0.01</td><td style="color:#ff0000" >Failed</td></tr>
-        <tr><td>0000025</td><td>functions.mod(x,y)</td><td>string, 2</td><td>Can only calculate x modulo &lt;integer&gt;</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000011</td><td>functions.ln(x)</td><td>[u'-1']</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000012</td><td>functions.ln(x)</td><td>[u'1']</td><td>0.0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000013</td><td>functions.ln(x)</td><td>[u'0']</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000014</td><td>functions.ln(x)</td><td>[u'string']</td><td>Logarithm(x) only defined for x > 0</td><td>Logarithm(x) only defined for x > 0</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000015</td><td>functions.ln(x)</td><td>[u'.01']</td><td>-4.60517018599</td><td>-4.60517018599</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000016</td><td>functions.factorial(n)</td><td>[u'5']</td><td>120</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000017</td><td>functions.factorial(n)</td><td>[u'0']</td><td>1</td><td>0</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000018</td><td>functions.factorial(n)</td><td>[u'-10']</td><td>Factorial(x) is only defined for integers x>=0</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000019</td><td>functions.factorial(n)</td><td>[u'7.01']</td><td>Factorial only defined for integers</td><td>Factorial only defined for integers</td><td style="color:#00ff00" >Passed</td></tr>
+        <tr><td>0000020</td><td>functions.factorial(n)</td><td>[u'100']</td><td>93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td>1</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000021</td><td>functions.mod(x,y)</td><td>[u'10', u'3']</td><td>1</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000022</td><td>functions.mod(x,y)</td><td>[u'3', u'10']</td><td>3</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000023</td><td>functions.mod(x,y)</td><td>[u'-20.5', u'5']</td><td>4.5</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000024</td><td>functions.mod(x,y)</td><td>[u'1', u'0.01']</td><td>Can only calculate x modulo &lt;integer&gt;</td><td>0.01</td><td style="color:#ff0000" >Failed</td></tr>
+        <tr><td>0000025</td><td>functions.mod(x,y)</td><td>[u'string', u'2']</td><td>Can only calculate x modulo &lt;integer&gt;</td><td>Can only calculate x modulo &lt;integer&gt;</td><td style="color:#00ff00" >Passed</td></tr>
 
 	<!-- End OutputWriter Text Here -->
 </table>
