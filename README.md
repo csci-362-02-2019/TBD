@@ -27,4 +27,4 @@ Test cases are located in the testCases directory within TestAutomation.  Within
 # How to use Framework 
 In order to execute the test cases, first ensure that at least one test case is created within the testCase files for an existing driver.  Then run the runAllTests.py within the scripts directory.  The output will be sent to an HTML file and then opened in the browser. \ 
 
-![framework_structure](https://imgur.com/esZQxPV)
+![framework_structure](TestingArch.jpg)
