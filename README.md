@@ -4,7 +4,7 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 ## Framework Directory Structure:
 
-![directory framework](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/DirectoryTree.jpg?token=ALEZGXMHZJDINI4HOOXNAVC52NAOM)
+![directory framework](DirectoryTree.jpg)
 
 # Repositories 
 Project: Contains files for presentation of data and formatting of data \
@@ -27,4 +27,4 @@ Test cases are located in the testCases directory within TestAutomation.  Within
 # How to use Framework 
 In order to execute the test cases, first ensure that at least one test case is created within the testCase files for an existing driver.  Then run the runAllTests.py within the scripts directory.  The output will be sent to an HTML file and then opened in the browser. \ 
 
-![framework_structure](https://raw.githubusercontent.com/csci-362-02-2019/TBD/master/TestingArch.jpg?token=ALEZGXLZLMQWZTQW6HARPHS52NAQK)
+![framework_structure](TestingArch.jpg)
