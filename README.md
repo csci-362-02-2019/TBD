@@ -4,7 +4,7 @@ John-Tyler Cooper, Austin Purtell, Thomas Setzler
 
 ## Framework Directory Structure:
 
-![directory framework](https://imgur.com/oOLZ5Wa)
+![directory framework](DirectoryTree.jpg)
 
 # Repositories 
 Project: Contains files for presentation of data and formatting of data \
